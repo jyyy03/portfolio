@@ -13221,7 +13221,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #02aab0;
+  background: #6295a2;
 }
 
 h1, .h1 {
@@ -13259,22 +13259,22 @@ a:hover {
 }
 
 .text-color-main {
-  color: #00cdac;
-  -webkit-text-fill-color: #00cdac;
+  color: #80b9ad;
+  -webkit-text-fill-color: #80b9ad;
 }
 
 @supports (background-clip: text) {
   .text-color-main {
     -webkit-text-fill-color: transparent;
     color: #0000;
-    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
     -webkit-background-clip: text;
   }
 }
 
 @media (width <= 37.5em) {
   .text-color-main {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #80b9ad;
     background-image: none;
   }
 }
@@ -13306,26 +13306,26 @@ a:hover {
 }
 
 .cta-btn--hero {
-  color: #00cdac;
-  -webkit-text-fill-color: #00cdac;
+  color: #80b9ad;
+  -webkit-text-fill-color: #80b9ad;
   -webkit-border-image-slice: 1;
   border-style: solid;
   border-width: 2px;
-  border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%) 1;
+  border-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%) 1;
 }
 
 @supports (background-clip: text) {
   .cta-btn--hero {
     -webkit-text-fill-color: transparent;
     color: #0000;
-    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
     -webkit-background-clip: text;
   }
 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .cta-btn--hero {
-    color: #00cdac !important;
+    color: #80b9ad !important;
   }
 
   .cta-btn--hero:hover {
@@ -13335,14 +13335,14 @@ a:hover {
 
 @media (width <= 37.5em) {
   .cta-btn--hero {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #80b9ad;
     background-image: none;
-    border: 2px solid #00cdac;
+    border: 2px solid #80b9ad;
   }
 }
 
 .cta-btn--hero:after {
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
 }
 
 @media (width <= 37.5em) {
@@ -13358,7 +13358,7 @@ a:hover {
 
 @media (width <= 37.5em) {
   .cta-btn--hero:hover {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #80b9ad;
   }
 }
 
@@ -13376,7 +13376,7 @@ a:hover {
 }
 
 .cta-btn--resume:hover {
-  color: #00cdac;
+  color: #80b9ad;
   text-decoration: none;
 }
 
@@ -13414,7 +13414,7 @@ a:hover {
 }
 
 .footer__text a:hover, .footer__text a:active {
-  color: #02aab0;
+  color: #6295a2;
   box-shadow: 0 1.5rem 4rem #00000026;
 }
 
@@ -13472,8 +13472,8 @@ section {
 #about {
   color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background-color: #02aab0;
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-color: #6295a2;
+  background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
   border-top: 0;
   height: 100%;
   padding-bottom: 10%;
@@ -13541,7 +13541,7 @@ section {
 }
 
 #about .about-wrapper__info-text--important {
-  background: #00c8a8;
+  background: #7db7ab;
   margin: .3rem 0;
   padding: 0 .3rem;
   font-style: italic;
@@ -13562,7 +13562,7 @@ section {
 #contact {
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   color: #fff;
-  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
   margin-top: -10rem;
   margin-bottom: -1px;
   padding: 15rem 0 10rem;
@@ -13733,7 +13733,7 @@ section {
 }
 
 #projects .project-wrapper__text p > a {
-  color: #00cdac;
+  color: #80b9ad;
 }
 
 #projects .project-wrapper__image {
