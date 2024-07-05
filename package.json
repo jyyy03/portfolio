@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "homepage": "https://jytang-portfolio.netlify.app/",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -18,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
