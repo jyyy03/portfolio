@@ -20,9 +20,18 @@
 
   // If you want to set a background image on the hero section, uncomment these with your custom image
 
-  /* background: url("/src/assets/[your-image].png");
+  // background: url("/src/assets/dl_poster.jpg");
   background-position: center;
-  background-size: cover; */
+  background-size: cover; 
+  background-color: #EEF7FF;
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; // Make sure it is behind your content
+  }
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
