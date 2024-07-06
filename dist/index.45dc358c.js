@@ -128,7 +128,7 @@ allElements.forEach((element)=>{
                     // It waits 4 seconds to start erasing the word
                     setTimeout(()=>{
                         eraseText();
-                    }, 600);
+                    }, 800);
                 }
             }
             function eraseText() {

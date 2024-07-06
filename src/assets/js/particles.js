@@ -144,7 +144,7 @@ if (allElements.length > 0) {
             // It waits 4 seconds to start erasing the word
             setTimeout(() => {
               eraseText();
-            }, 600);
+            }, 800);
           }
         }
 

@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+@import "https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap";
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13204,7 +13205,7 @@ html.sr .load-hidden {
 body {
   text-align: center;
   scroll-behavior: smooth;
-  font-family: Montserrat, sans-serif;
+  font-family: Comic Neue, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -13598,7 +13599,7 @@ section {
 
 #hero {
   color: #272341;
-  z-index: -1;
+  z-index: 1;
   background: #eef7ff center / cover;
   border-bottom: 0;
   align-items: center;
@@ -13608,6 +13609,7 @@ section {
   padding: 0 5.6rem;
   font-weight: 400;
   display: flex;
+  position: relative;
   inset: 0;
 }
 
@@ -13626,11 +13628,20 @@ section {
   }
 }
 
+#hero .hero-image {
+  z-index: 1;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
 #hero .hero-title {
-  text-align: left;
+  letter-spacing: .025em;
+  text-align: center;
+  z-index: 1;
   margin-bottom: 3.2rem;
-  font-size: 5.6rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 1000;
+  position: relative;
 }
 
 @media (width <= 75em) {
@@ -13660,6 +13671,8 @@ section {
 }
 
 #hero .hero-cta {
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -13677,6 +13690,31 @@ section {
   #hero .hero-cta a {
     font-size: 2rem;
   }
+}
+
+#hero .animated-text span {
+  line-height: 1;
+  display: none;
+}
+
+#hero .animated-text span.active {
+  display: inline;
+}
+
+#hero .animated-text:after {
+  content: ".";
+  text-indent: 0;
+  background: var(--col-icon);
+  width: 6px;
+  animation: .5s infinite alternate blink;
+  display: inline;
+}
+
+#hero .datawords {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #projects {

@@ -30,34 +30,43 @@
   <script defer="" src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-
 <body>
   <div id="top"></div>
 
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
+    <!--Particles effect-->
     <div id="particles-js"></div>
+
+    <!--Home Section-->
     <div class="container">
+      <div class="hero-image">
+        <img src="/hi.46ef77c6.gif" height="180" width="180">
+      </div>
+
       <h1 class="hero-title load-hidden">
-        Hi, my name is <span class="text-color-main">Jingyu Nora Tang</span>
+        Hey, I'm <span class="text-color-main">Jingyu (Nora) Tang</span>.
         <br>
-        I'm a <del>Cat</del> Software Developer.
+        <span style="display: inline">I'm into <span class="animated-text" data-words="Cats, Data Engineering, Software Development, Cloud Computing, Cooking, Skiing, Surfing"></span>
+        </span>
       </h1>
+
       <p class="hero-cta load-hidden">
-        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Meow Down</a>
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects">Meow Down</a>
       </p>
     </div>
   </section>
   <!-- /END Hero Section -->
 
   <!-- **** About Section **** -->
-  <section id="about">
+  <!-- <section id="about">
     <div class="container">
       <h2 class="section-title load-hidden">About me</h2>
       <div class="row about-wrapper">
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper__image load-hidden">
-            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="200px" src="/profile.7064521f.jpeg">
+            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="200px"
+              src="assets/profile.jpeg" alt="Profile Image" />
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -70,7 +79,7 @@
               I love my cat Renee.
             </p>
             <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="/assets/JingyuTang_resume.pdf">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="assets/JingyuTang_resume.pdf">
                 View Resume
               </a>
             </span>
@@ -78,7 +87,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /END About Section -->
 
   <!-- **** Projects Section **** -->
@@ -90,14 +99,18 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">RFC-compliant IP/TCP Protocols</h3>
+              <h3 class="project-wrapper__text-title">
+                RFC-compliant IP/TCP Protocols
+              </h3>
               <div>
                 <p class="mb-4">
-                  A re-implementation of RFC-compliant IP/TCP protocols based on RFC 9293.
+                  A re-implementation of RFC-compliant IP/TCP protocols based
+                  on RFC 9293.
                 </p>
                 <p class="mb-4">
-                  Key features include reliable data transmission and retransmission over lossy connections, multiple
-                  clients, data flow control, etc.
+                  Key features include reliable data transmission and
+                  retransmission over lossy connections, multiple clients,
+                  data flow control, etc.
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://datatracker.ietf.org/doc/html/rfc9293">
@@ -120,49 +133,57 @@
         </div>
         <!-- /END Project -->
 
-            <!-- Notice: each .row is a project -->
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <div class="project-wrapper__text load-hidden">
-                  <h3 class="project-wrapper__text-title">DUSE: A DISTRIBUTED SEARCH ENGINE FOR USENIX PAPER</h3>
-                  <div>
-                    <p class="mb-4">
-                      In this project, we implemented a distributed search engine designed for the <a href="https://www.usenix.org/">USENIX</a> publication repository.
-                      Utilizing the map-reduce model, this search engine achieves both scalability and fault-tolerance, 
-                      demonstrating the powerful benefits of distributed systems.</p>
-                    
-                  </div>
-                  <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://aigaoshiboy.github.io/csci1380-m6/">
-                    See Live
-                  </a>
-                  <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/AiGaoShiBOY/csci1380-m6?tab=readme-ov-file">
-                    Source Code
-                  </a>
-                </div>
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">
+                DUSE: A DISTRIBUTED SEARCH ENGINE FOR USENIX PAPER
+              </h3>
+              <div>
+                <p class="mb-4">
+                  In this project, we implemented a distributed search engine
+                  designed for the
+                  <a href="https://www.usenix.org/">USENIX</a> publication
+                  repository. Utilizing the map-reduce model, this search
+                  engine achieves both scalability and fault-tolerance,
+                  demonstrating the powerful benefits of distributed systems.
+                </p>
               </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="project-wrapper__image load-hidden">
-                  <a rel="noreferrer" href="#!" target="_blank">
-                    <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
-                      <img alt="Project Image" class="img-fluid" src="/distributed_poster.6e25a902.png">
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://aigaoshiboy.github.io/csci1380-m6/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/AiGaoShiBOY/csci1380-m6?tab=readme-ov-file">
+                Source Code
+              </a>
             </div>
-            <!-- /END Project -->
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5" class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="/distributed_poster.6e25a902.png">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
 
         <!-- Notice: each .row is a project -->
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Adversarial Learning Is All Semantic Segmentation Needs</h3>
+              <h3 class="project-wrapper__text-title">
+                Adversarial Learning Is All Semantic Segmentation Needs
+              </h3>
               <div>
                 <p class="mb-4">
-                  The project uses adversarial learning to improve the performance of semantic segmentation tasks.
-                  By integrating adversarial loss with cross-entropy loss,
-                  this approach enhances the model's ability to correctly segment and classify various parts of an
-                  image.
+                  The project uses adversarial learning to improve the
+                  performance of semantic segmentation tasks. By integrating
+                  adversarial loss with cross-entropy loss, this approach
+                  enhances the model's ability to correctly segment and
+                  classify various parts of an image.
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://devpost.com/software/adversarial-learning-is-all-semantic-segmentation-needs">
@@ -192,16 +213,16 @@
               <h3 class="project-wrapper__text-title">K9db Visualizer</h3>
               <div>
                 <p class="mb-4">
-                  <a href="https://cs.brown.edu/courses/csci2390/2023/readings/k9db.pdf" target="_blank">K9db</a> is a
-                  MySQL-compatible database that is capable of complying with privacy laws like the General Data
-                  Protection
+                  <a href="https://cs.brown.edu/courses/csci2390/2023/readings/k9db.pdf" target="_blank">K9db</a>
+                  is a MySQL-compatible database that is capable of complying
+                  with privacy laws like the General Data Protection
                   Regulation (GDPR) upon creation.
-
                 </p>
                 <p class="mb-4">
-                  To provide better visualization, we therefore propose a supporting visualization tool capable of
-                  addressing this problem. Our project takes in develpers'
-                  schemas as inputs, and it outputs a corresponding Data Ownership Graph.
+                  To provide better visualization, we therefore propose a
+                  supporting visualization tool capable of addressing this
+                  problem. Our project takes in develpers' schemas as inputs,
+                  and it outputs a corresponding Data Ownership Graph.
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://mingchao-zhang.github.io/K9db-Visualizer/">
@@ -223,8 +244,6 @@
           </div>
         </div>
         <!-- /END Project -->
-
-    
       </div>
     </div>
   </section>
