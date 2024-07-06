@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
 @import "https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13391,8 +13391,8 @@ a:hover {
 
 .footer {
   color: #fff;
-  background-color: #333;
-  padding: 4.8rem 0;
+  background-color: #6295a2;
+  padding: 1.4rem;
 }
 
 @media (width <= 37.5em) {
@@ -13402,55 +13402,24 @@ a:hover {
 }
 
 .footer__text {
-  color: gray;
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .footer__text a {
-  color: gray;
-  background-color: #333;
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.5rem;
   transition: all .4s;
-  display: inline-block;
 }
 
 .footer__text a:hover, .footer__text a:active {
-  color: #6295a2;
+  color: #80b9ad;
   box-shadow: 0 1.5rem 4rem #00000026;
-}
-
-.footer hr {
-  border: 0;
-  border-top: 2px solid gray;
-  width: 50%;
-  margin: 1rem auto;
-}
-
-.social-links {
-  flex-direction: row;
-  justify-content: center;
-  display: flex;
-}
-
-.social-links a {
-  color: #fff;
-  flex-direction: column;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  margin: 1.6rem;
-  font-size: 3rem;
-  transition: all .2s ease-in;
-  display: flex;
-}
-
-.social-links a:hover {
-  transform: translateY(-2px);
 }
 
 .back-to-top i {
   color: #fff;
-  margin: 1rem 0 1.6rem;
+  margin: 1.4rem 0 1.6rem;
   transition: all .2s ease-in;
 }
 
@@ -13472,9 +13441,10 @@ section {
 
 #about {
   color: #fff;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background-color: #6295a2;
-  background-image: linear-gradient(135deg, #6295a2 0%, #80b9ad 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 60% 80%, 0 100%);
+  background-color: #eef7ff;
+  background-image: linear-gradient(135deg, #eef7ff 0%, #80b9ad 100%);
   border-top: 0;
   height: 100%;
   padding-bottom: 10%;
@@ -13638,6 +13608,7 @@ section {
   letter-spacing: .025em;
   text-align: center;
   z-index: 1;
+  margin-top: 3.2rem;
   margin-bottom: 3.2rem;
   font-size: 5rem;
   font-weight: 1000;
@@ -13668,6 +13639,34 @@ section {
   #hero .hero-title {
     font-size: 2.8rem;
   }
+}
+
+#hero :root {
+  --link-size: 64px;
+  --trans-props: all .2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+#hero .social-icons {
+  z-index: 1;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  display: flex;
+  position: relative;
+}
+
+#hero .first-icon {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#hero .rest-icon {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #hero .hero-cta {
@@ -13719,7 +13718,7 @@ section {
 
 #projects {
   color: #272341;
-  background-color: #fff;
+  background-color: #eef7ff;
   margin-top: -10rem;
   padding-top: 15rem;
 }
