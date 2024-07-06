@@ -96,23 +96,6 @@
   margin-top: 10px;
 }
 
-  .hero-cta {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-
-    & a {
-      font-size: 2.4rem;
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
-  }
-
   .animated-text span {
     display: none;
     line-height: 1;
@@ -135,5 +118,17 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+  }
+
+  .scroll-down i {
+    color: $darker-color;
+    margin: 1.4rem 0 $default-font-size;
+    transition: all 0.2s ease-in;
+    position: absolute; 
+    bottom: 20;
+    z-index: 1;
+    &:hover {
+      transform: translateY(5px);
+    }
   }
 }

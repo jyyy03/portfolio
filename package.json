@@ -2,7 +2,7 @@
   "name": "simplefolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "my portfolio built upon others",
   "homepage": "https://jytang-portfolio.netlify.app/",
   "source": "src/index.html",
   "scripts": {
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/jyyy03/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Jingyu Tang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
