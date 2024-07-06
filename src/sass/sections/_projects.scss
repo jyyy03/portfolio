@@ -1,8 +1,8 @@
 #projects {
   background-color: #EEF7FF;
   color: $dark-blue-text;
-  margin-top: -10rem;
-  padding-top: 15rem;
+  margin-top: 0rem;
+  padding-top: 5rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -50,7 +50,7 @@
     }
 
     &__image {
-      width: 90%;
+      width: 85%;
       margin: 0 auto;
 
       @include respond(tab-land) {
