@@ -1,8 +1,11 @@
+
 #hero {
   min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
@@ -131,19 +134,21 @@
   }
 
   .scroll-down{
-    width: 32px; // Set the width
-    height: 32px; // Set the height
-    display: inline-block; // Make sure it's an inline-block element
+    width: 32px; 
+    height: 32px; 
+    display: inline-block;
     background-image: url('https://img.icons8.com/?size=100&id=107417&format=png&color=000000');
-    background-size: contain; // Ensure the image fits within the element
-    background-repeat: no-repeat; // Prevent the image from repeating
-    bottom: -160px;
-    position: relative; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    position: absolute; /* Position the element absolutely */
+    left: 50%; /* Center the element horizontally */
+    transform: translateX(-50%); /* Adjust the centering */
     z-index: 1;
-    transition: all 0.2s ease-in; // Added transition for smooth hover effect
+    transition: all 0.2s ease-in; 
+    bottom: 2.6%;
     &:hover {
       background-image: url('https://img.icons8.com/?size=100&id=120583&format=png&color=000000');
-      transform: translateX(12px); // Add the transform effect if needed
+      transform: translateX(2%); 
     }
   }
 }

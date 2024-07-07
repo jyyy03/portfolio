@@ -13421,6 +13421,8 @@ section {
   z-index: 1;
   background: #eef7ff center / cover;
   border-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   min-height: 100vh;
@@ -13564,13 +13566,15 @@ section {
   height: 32px;
   transition: all .2s ease-in;
   display: inline-block;
-  position: relative;
-  bottom: -160px;
+  position: absolute;
+  bottom: 2.6%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #hero .scroll-down:hover {
   background-image: url("https://img.icons8.com/?size=100&id=120583&format=png&color=000000");
-  transform: translateX(12px);
+  transform: translateX(2%);
 }
 
 #projects {
