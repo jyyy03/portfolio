@@ -88,12 +88,22 @@
 .first-icon{
   margin-top: 10px;
   margin-right: 15px;
+  transition: all 0.2s ease-in; // Added transition for smooth hover effect
+    &:hover {
+      transform: translateY(-3px); // Add the transform effect if needed
+      filter: brightness(0.92); // Adjust the brightness to darken the image
+    }
 }
 
 .rest-icon {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 10px;
+  transition: all 0.2s ease-in; // Added transition for smooth hover effect
+  &:hover {
+    transform: translateY(-3px); // Add the transform effect if needed
+    filter: brightness(0.92); // Adjust the brightness to darken the image
+  }
 }
 
   .animated-text span {
@@ -120,15 +130,20 @@
       white-space: nowrap;
   }
 
-  .scroll-down i {
-    color: $darker-color;
-    margin: 1.4rem 0 $default-font-size;
-    transition: all 0.2s ease-in;
-    position: absolute; 
-    bottom: 20;
+  .scroll-down{
+    width: 32px; // Set the width
+    height: 32px; // Set the height
+    display: inline-block; // Make sure it's an inline-block element
+    background-image: url('https://img.icons8.com/?size=100&id=107417&format=png&color=000000');
+    background-size: contain; // Ensure the image fits within the element
+    background-repeat: no-repeat; // Prevent the image from repeating
+    bottom: -160px;
+    position: relative; 
     z-index: 1;
+    transition: all 0.2s ease-in; // Added transition for smooth hover effect
     &:hover {
-      transform: translateY(5px);
+      background-image: url('https://img.icons8.com/?size=100&id=120583&format=png&color=000000');
+      transform: translateX(12px); // Add the transform effect if needed
     }
   }
 }

@@ -13510,12 +13510,24 @@ section {
 #hero .first-icon {
   margin-top: 10px;
   margin-right: 15px;
+  transition: all .2s ease-in;
+}
+
+#hero .first-icon:hover {
+  filter: brightness(.92);
+  transform: translateY(-3px);
 }
 
 #hero .rest-icon {
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  transition: all .2s ease-in;
+}
+
+#hero .rest-icon:hover {
+  filter: brightness(.92);
+  transform: translateY(-3px);
 }
 
 #hero .animated-text span {
@@ -13543,17 +13555,22 @@ section {
   overflow: hidden;
 }
 
-#hero .scroll-down i {
-  color: #538392;
+#hero .scroll-down {
   z-index: 1;
-  margin: 1.4rem 0 1.8rem;
+  background-image: url("https://img.icons8.com/?size=100&id=107417&format=png&color=000000");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
   transition: all .2s ease-in;
-  position: absolute;
-  bottom: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: -160px;
 }
 
-#hero .scroll-down i:hover {
-  transform: translateY(5px);
+#hero .scroll-down:hover {
+  background-image: url("https://img.icons8.com/?size=100&id=120583&format=png&color=000000");
+  transform: translateX(12px);
 }
 
 #projects {
