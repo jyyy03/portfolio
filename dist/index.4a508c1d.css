@@ -13416,12 +13416,24 @@ section {
   }
 }
 
+#preloader {
+  z-index: 9999;
+  background-color: #eef7ff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 #hero {
   color: #001c30;
   z-index: 1;
   background: #eef7ff center / cover;
   border-bottom: 0;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13520,6 +13532,12 @@ section {
   transform: translateY(-3px);
 }
 
+#hero .first-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(2px);
+}
+
 #hero .rest-icon {
   margin-top: 10px;
   margin-left: 15px;
@@ -13530,6 +13548,12 @@ section {
 #hero .rest-icon:hover {
   filter: brightness(.92);
   transform: translateY(-3px);
+}
+
+#hero .rest-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(2px);
 }
 
 #hero .animated-text span {
@@ -13574,7 +13598,23 @@ section {
 
 #hero .scroll-down:hover {
   background-image: url("https://img.icons8.com/?size=100&id=120583&format=png&color=000000");
-  transform: translateX(2%);
+  transform: translateX(2px);
+}
+
+#hero .tooltip-text {
+  visibility: hidden;
+  color: #538392;
+  text-align: center;
+  z-index: 1;
+  opacity: .2;
+  border-radius: 6px;
+  width: 180%;
+  margin-left: -90%;
+  font-size: 1.2rem;
+  transition: opacity .2s;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
 }
 
 #projects {
